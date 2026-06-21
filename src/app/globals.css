@@ -532,62 +532,106 @@ nav a:hover {
   color: var(--tan);
 }
 
-.polaroid-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.6rem 1.4rem;
+.carousel {
+  outline: none;
 }
 
-@media (max-width: 880px) {
-  .polaroid-grid {
-    grid-template-columns: repeat(2, 1fr);
+.carousel-frame {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.carousel-stage {
+  position: relative;
+  flex: 1;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #1c1814;
+  border: 6px solid var(--pine);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+  cursor: grab;
+  touch-action: pan-y;
+}
+
+.carousel-stage:active {
+  cursor: grabbing;
+}
+
+.carousel-slide {
+  position: absolute;
+  inset: 0;
+  transition: transform 0.45s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel-slide {
+    transition: none;
   }
 }
 
-.polaroid {
-  background: #fdfaf2;
-  padding: 0.6rem 0.6rem 1rem;
-  border-radius: 2px;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
-  transform: rotate(var(--rot, 0deg));
-}
-
-.polaroid:nth-child(odd) {
-  --rot: -2deg;
-}
-
-.polaroid:nth-child(even) {
-  --rot: 2.2deg;
-}
-
-.polaroid:hover {
-  transform: rotate(0deg) scale(1.03);
-  transition: transform 0.2s;
-}
-
-.polaroid .ph {
-  aspect-ratio: 1/1;
-  background: repeating-linear-gradient(45deg, #d8cdb8 0 8px, #cdc0a6 8px 16px);
+.carousel-arrow {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid var(--tan);
+  background: var(--coal);
+  color: var(--pine);
+  font-size: 1.6rem;
+  line-height: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #7a6f5c;
-  font-family: 'Oswald', sans-serif;
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  text-align: center;
-  padding: 0.5rem;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.15s;
 }
 
-.polaroid figcaption {
-  font-family: 'Oswald', sans-serif;
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #2b2520;
-  text-align: center;
-  margin-top: 0.6rem;
+.carousel-arrow:hover {
+  background: var(--rust);
+  transform: scale(1.08);
+}
+
+@media (max-width: 640px) {
+  .carousel-frame {
+    gap: 0.4rem;
+  }
+  .carousel-arrow {
+    width: 34px;
+    height: 34px;
+    font-size: 1.3rem;
+  }
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.55rem;
+  margin-top: 1.4rem;
+}
+
+.carousel-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: none;
+  background: #5a5044;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.15s, transform 0.15s;
+}
+
+.carousel-dot.active {
+  background: var(--tan);
+  transform: scale(1.25);
+}
+
+.carousel-dot:hover {
+  background: var(--pine);
 }
 
 /* ================= WHY US ================= */
