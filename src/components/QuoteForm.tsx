@@ -84,7 +84,7 @@ export default function QuoteForm() {
                   </div>
                   <div className="field">
                     <label htmlFor="address">Property Address</label>
-                    <input type="text" id="address" name="address" placeholder="County road & city" />
+                    <input type="text" id="address" name="address" placeholder="Street address & city" />
                   </div>
                   <div className="field">
                     <label htmlFor="fence-type">Fence Type</label>
