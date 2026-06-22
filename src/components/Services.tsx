@@ -19,7 +19,7 @@ const services = [
   {
     icon: "🌾",
     title: "Livestock Containment",
-    description: "Full-property containment systems designed around how your animals actually move.",
+    description: "Full-property containment systems designed around how your animals actually move — including electric and hot wire where it's the right tool for the job.",
   },
   {
     icon: "🏡",
@@ -55,7 +55,7 @@ export default function Services() {
         <div className="section-head">
           <span className="label-tag">What We Build</span>
           <h2>Fencing For Every Acre</h2>
-          <p>From the front yard to the back forty — if it needs a fence, we've probably built one like it.</p>
+          <p>From the front yard to the back forty — vinyl, rail, hog wire, electric, and everything between. If it needs a fence, we&apos;ve probably built one like it.</p>
         </div>
 
         <div className="placard-grid">

@@ -12,7 +12,7 @@ const reasons = [
   {
     label: "Built To Hold",
     title: "Fence That Actually Contains",
-    description: "We build for the animal on the other side of it — not just for how it looks from the road.",
+    description: "We build for the animal on the other side of it — rail, wire, or electric hot wire — not just for how it looks from the road.",
   },
 ];
 
