@@ -76,7 +76,7 @@ export default function Gallery() {
       <div className="wrap">
         <div className="section-head">
           <span className="label-tag">Recent Work</span>
-          <h2>Jobs From Around The Property</h2>
+          <h2>Jobs From Around The Region</h2>
           <p>Rail fence, wire fence, privacy fence, and a couple of run-in sheds we&apos;ve built lately.</p>
         </div>
 
