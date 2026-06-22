@@ -16,7 +16,7 @@ export default function Header() {
           <Link href="#quote">Get A Quote</Link>
         </nav>
         <div className="nav-cta-wrap">
-          <a href="tel:+15555550123" className="nav-cta">(555) 555-0123</a>
+          <a href="tel:+12525508551" className="nav-cta">(252) 550-8551</a>
         </div>
       </div>
     </header>

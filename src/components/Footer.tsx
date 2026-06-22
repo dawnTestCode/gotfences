@@ -28,7 +28,7 @@ export default function Footer() {
           <div>
             <h4>Get In Touch</h4>
             <ul>
-              <li><a href="tel:+15555550123">(555) 555-0123</a></li>
+              <li><a href="tel:+12525508551">(252) 550-8551</a></li>
               <li><a href="mailto:info@gotfencesusa.com">info@gotfencesusa.com</a></li>
               <li><Link href="#quote">Request a quote</Link></li>
             </ul>
