@@ -16,8 +16,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://gotfences.com"),
   title: "Got Fences USA — Vinyl, Rail & Livestock Fencing",
   description: "Vinyl, rail, hog wire and privacy fencing installed by a crew that knows the difference between a fence that looks good and a fence that holds animals.",
+  manifest: "/manifest.json",
   appleWebApp: {
+    capable: true,
     title: "Got Fences",
+    statusBarStyle: "default",
   },
   icons: {
     icon: [
