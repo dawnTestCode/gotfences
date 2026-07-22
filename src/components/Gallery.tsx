@@ -4,13 +4,13 @@ import { useState, useRef, useCallback, useEffect } from "react";
 import Image from "next/image";
 
 const galleryItems = [
+  { src: "/images/gallery/ramm.jpg", alt: "RAMM flex fence paddock with horses and run-in shed" },
+  { src: "/images/gallery/ramm2.jpg", alt: "RAMM flex fence line with black posts across pasture" },
+  { src: "/images/gallery/ramm3.jpg", alt: "White RAMM flex rail fence along grass pathway" },
   { src: "/images/gallery/IMG_1486.jpeg", alt: "White vinyl three-rail arena fence with horses" },
   { src: "/images/gallery/IMG_4933.jpeg", alt: "Black wood rail fence and gate with barn in background" },
   { src: "/images/gallery/IMG_4967.jpeg", alt: "Lighted arena with white vinyl rail fence at night" },
   { src: "/images/gallery/IMG_5335.jpeg", alt: "White vinyl rail fence paddock with horses in shade" },
-  { src: "/images/gallery/ramm.jpg", alt: "RAMM flex fence paddock with horses and run-in shed" },
-  { src: "/images/gallery/ramm2.jpg", alt: "RAMM flex fence line with black posts across pasture" },
-  { src: "/images/gallery/ramm3.jpg", alt: "White RAMM flex rail fence along grass pathway" },
   { src: "/images/gallery/rail-fence-pasture-01.jpeg", alt: "Four-rail wood fence along a pasture at sunrise" },
   { src: "/images/gallery/rail-wire-fence-road-02.jpeg", alt: "Wood rail fence with welded wire mesh along a roadside" },
   { src: "/images/gallery/rail-wire-fence-tree-03.jpeg", alt: "Rail and wire fence built around a mature tree" },
