@@ -14,8 +14,8 @@ const services = [
     text: "Low-maintenance vinyl rail and privacy fence that holds its color and its line for decades.",
   },
   {
-    img: "/images/gallery/rail-fence-pasture-01.jpeg",
-    alt: "Four-rail wood fence along a pasture at sunrise",
+    img: "/images/gallery/run-in-shed-framing-07.jpeg",
+    alt: "Four-rail wood fence running along a pasture",
     title: "Rail Fencing",
     text: "Classic 2, 3, and 4-rail wood and vinyl fence for pasture, paddock, and curb appeal.",
   },
@@ -27,8 +27,8 @@ const services = [
     text: "Tight-mesh hog panel and field fence built to contain — not just suggest a boundary.",
   },
   {
-    img: "/images/gallery/pasture-horses-gate-14.jpeg",
-    alt: "Pasture gate with horses grazing in the background",
+    img: "/images/gallery/field-wire-fence-13.jpeg",
+    alt: "Field wire fence line running across an open pasture",
     title: "Livestock Containment",
     text: "Full-property containment systems designed around how your animals actually move — including electric and hot wire where it's the right tool for the job.",
   },
@@ -85,9 +85,9 @@ const steps = [
 const work = [
   { img: "/images/gallery/ramm.jpg", alt: "RAMM flex fence paddock with horses and run-in shed", cap: "Flex-rail paddock & run-in shed" },
   { img: "/images/gallery/IMG_5335.jpeg", alt: "White vinyl rail fence paddock with horses in shade", cap: "Vinyl rail paddock" },
-  { img: "/images/gallery/driveway-rail-fence-04.jpeg", alt: "Gravel driveway lined with rail fence on both sides", cap: "Rail fence, both sides of the drive" },
+  { img: "/images/gallery/rail-fence-pasture-01.jpeg", alt: "Dirt lane lined with rail fence on both sides", cap: "Rail fence, both sides of the drive" },
   { img: "/images/gallery/IMG_4933.jpeg", alt: "Black wood rail fence and gate with barn in background", cap: "Rail fence & gate at the barn" },
-  { img: "/images/gallery/rail-wire-fence-road-02.jpeg", alt: "Wood rail fence with welded wire mesh along a roadside", cap: "Rail & wire, roadside run" },
+  { img: "/images/gallery/rail-wire-fence-road-02.jpeg", alt: "Wood rail and wire fence built around a mature tree", cap: "Rail & wire, worked around the tree" },
   { img: "/images/gallery/IMG_4967.jpeg", alt: "Lighted arena with white vinyl rail fence at night", cap: "Vinyl rail arena" },
   { img: "/photos/fence-roll.jpg", alt: "Kubota tractor unrolling field fence while the crew lead guides the roll", cap: "Rolling out field fence" },
   { img: "/photos/wire-fasten.jpg", alt: "Crew member fastening woven wire to a post, tractor holding tension behind him", cap: "Fastening wire on the post line" },
@@ -117,7 +117,7 @@ export default function Home() {
       <section className="gf2-hero">
         <Image
           src="/images/gallery/rail-fence-pasture-01.jpeg"
-          alt="Four-rail wood fence along a pasture at sunrise"
+          alt="Wood rail fence lining both sides of a farm lane"
           fill
           priority
           sizes="100vw"
@@ -224,8 +224,8 @@ export default function Home() {
           <div className="gf2-shed">
             <div className="gf2-shed-img">
               <Image
-                src="/images/gallery/run-in-shed-exterior-05.jpeg"
-                alt="Finished two-bay run-in shed exterior"
+                src="/images/gallery/rail-wire-fence-tree-03.jpeg"
+                alt="Finished two-bay run-in shed exterior with wood plank stalls"
                 fill
                 sizes="(max-width: 900px) 100vw, 520px"
               />
