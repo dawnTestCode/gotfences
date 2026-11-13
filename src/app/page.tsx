@@ -20,8 +20,9 @@ const services = [
     text: "Classic 2, 3, and 4-rail wood and vinyl fence for pasture, paddock, and curb appeal.",
   },
   {
-    img: "/images/gallery/field-wire-fence-13.jpeg",
-    alt: "Wire and post fence enclosing an open field",
+    img: "/photos/crew-wire.jpg",
+    alt: "Crew lead holding woven wire fence in place during an install, barn behind him",
+    pos: "center 22%",
     title: "Hog & Livestock Wire",
     text: "Tight-mesh hog panel and field fence built to contain — not just suggest a boundary.",
   },
@@ -88,6 +89,8 @@ const work = [
   { img: "/images/gallery/IMG_4933.jpeg", alt: "Black wood rail fence and gate with barn in background", cap: "Rail fence & gate at the barn" },
   { img: "/images/gallery/rail-wire-fence-road-02.jpeg", alt: "Wood rail fence with welded wire mesh along a roadside", cap: "Rail & wire, roadside run" },
   { img: "/images/gallery/IMG_4967.jpeg", alt: "Lighted arena with white vinyl rail fence at night", cap: "Vinyl rail arena" },
+  { img: "/photos/fence-roll.jpg", alt: "Kubota tractor unrolling field fence while the crew lead guides the roll", cap: "Rolling out field fence" },
+  { img: "/photos/wire-fasten.jpg", alt: "Crew member fastening woven wire to a post, tractor holding tension behind him", cap: "Fastening wire on the post line" },
 ];
 
 export default function Home() {
@@ -157,7 +160,7 @@ export default function Home() {
             {services.map((s) => (
               <article className="gf2-card" key={s.title}>
                 <div className="gf2-card-img">
-                  <Image src={s.img} alt={s.alt} fill sizes="(max-width: 900px) 100vw, 380px" />
+                  <Image src={s.img} alt={s.alt} fill sizes="(max-width: 900px) 100vw, 380px" style={{ objectPosition: "pos" in s ? s.pos : "center" }} />
                 </div>
                 <div className="gf2-card-body">
                   <h3>{s.title}</h3>
